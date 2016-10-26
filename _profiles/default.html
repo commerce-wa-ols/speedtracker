@@ -3,7 +3,7 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "My website"
+name: "Commerce Front Page (Chrome, DSL, Sydney)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
@@ -16,16 +16,16 @@ default: true
 # with a minimum value of 12, as only two scheduled tests per day are allowed.
 # To disabled repeated tests, simply remove this property from the profile.
 #
-interval: 12
+interval: 48
 
 #
 # WebPageTest test parameters
 #
 parameters:
-  connectivity: "Cable"
-  location: "Dulles:Chrome"
+  connectivity: "DSL"
+  location: "ec2-ap-southeast-2:Chrome"
   runs: 1
-  url: "https://my-website.com"
+  url: "https://www.commerce.wa.gov.au"
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value
